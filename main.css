@@ -1,0 +1,91 @@
+div.ttx_level,
+div.ttx_power,
+div.ttx_recharge {
+    position: relative;
+    height: 30px;
+    color: #fff;
+    margin: 10px;
+    padding-left: 20px;
+    width: 400px;
+    background: grey;
+    line-height: 30px;
+}
+
+div.ttx_level:before,
+div.ttx_power:before,
+div.ttx_recharge:before {
+    position: absolute;
+    content: '';
+    left: -27px;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    transform: skewX(-30deg);
+}
+
+div.ttx_level:after,
+div.ttx_power:after,
+div.ttx_recharge:after {
+    position: absolute;
+    content: '';
+    right: -27px;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    transform: skewX(-30deg);
+}
+
+div.text {
+    /*position: relative;*/
+    height: 30px;
+    width: 120px;
+    display: inline-block;
+}
+
+div.blocks {
+    position: absolute;
+    top: 2px;
+    right: 25px;
+    display: inline-block;
+    text-align: right;
+}
+
+div.ttx_block {
+    display: inline-block;
+    height: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 20px;
+    transform: skewX(-30deg);
+}
+
+div.ttx_level div.ttx_block:nth-child(1),
+div.ttx_level div.ttx_block:nth-child(2),
+div.ttx_power div.ttx_block:nth-child(1),
+div.ttx_power div.ttx_block:nth-child(2),
+div.ttx_recharge div.ttx_block:nth-child(1) {
+    background-color: rgb(89, 216, 174);
+}
+
+div.ttx_level div.ttx_block:nth-child(3),
+div.ttx_level div.ttx_block:nth-child(4),
+div.ttx_level div.ttx_block:nth-child(3),
+div.ttx_power div.ttx_block:nth-child(3) {
+    background-color: rgb(253, 253, 130);
+}
+
+div.ttx_level div.ttx_block:nth-child(5),
+div.ttx_level div.ttx_block:nth-child(6) {
+    background-color: rgb(223, 141, 108);
+}
+
+div.ttx_power div.ttx_block:nth-child(4),
+div.ttx_power div.ttx_block:nth-child(5),
+div.ttx_power div.ttx_block:nth-child(6),
+div.ttx_recharge div.ttx_block:nth-child(2),
+div.ttx_recharge div.ttx_block:nth-child(3),
+div.ttx_recharge div.ttx_block:nth-child(4),
+div.ttx_recharge div.ttx_block:nth-child(5),
+div.ttx_recharge div.ttx_block:nth-child(6) {
+    background-color: rgb(209, 208, 208);
+}
